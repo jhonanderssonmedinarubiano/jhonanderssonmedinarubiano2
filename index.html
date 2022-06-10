@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="estilo/index.css">
+</head>
+<body id="contDatos">
+    <section class="fila">
+        <div class="contform">
+            <h2>REGISTRO DE INFORMACION PARA EL AVATAR</h2>
+            <p>Complete los campos para generar su avatar</p>
+            <form action="#">
+                <div class="formGroup">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Ej: Homero simpson" required>
+                </div>
+                <div class="formGroup">
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" placeholder="Ej: 38" required>
+                </div>
+                <div class="formGroup">
+                    <label for="fecha">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha" required>
+                </div>
+                <div class="formGroup">
+                    <label for="genero">Genero:</label>
+                    <select name="#" id="genero">
+                        <option value="">Seleccione...</option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Otros">Otros</option>
+                    </select>
+                </div>
+                <div class="formGroup">
+                    <label for="email">Correo Electronico:</label>
+                    <input type="email" id="email" placeholder="Ej: MrX@gmail.com" required>
+                </div>
+                <div class="formGroup">
+                    <label for="descripcion">Descripcion Personaje:</label>
+                    <textarea name="" id="descripcion" cols="30" rows="3"></textarea>
+                </div>
+                <div class="formGroup">
+                    <label for="color">color:</label>
+                    <select name="#" id="color">
+                        <option value="">Seleccione...</option>
+                        <option value="azul">azul</option>
+                        <option value="rojo">rojo</option>
+                        <option value="naranja">naranja</option>
+                    </select>
+                </div>
+            </form>
+            <button onclick="capturarDatos()">Crear Avatar</button>
+            <button onclick="cambiarpag()">Cambiar a figuras</button>
+        </div>
+        <div class="contAvatar" id="contAvatar">
+            <h2>AVATAR</h2>
+            <img src="img\user.png" id="mFoto">
+            <h3 id="mNombre">Nombre</h3>
+            <p id="mEdad">Edad</p>
+            <p id="mFecha">Fecha de Nacimiento</p>
+            <p id="mGenero">Genero</p>
+            <p id="mEmail">Correo Electronico</p>
+            <p id="mDescripcion">Descripcion Personaje</p>
+        </div>
+    </section>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
+
+</html>

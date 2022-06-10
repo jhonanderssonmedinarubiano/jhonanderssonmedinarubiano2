@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --primary-color: rgb(255, 217, 15);
+    --secondaty-color: #70D1FE;
+}
+.fila {
+    display: flex;
+    width: 1200px;
+    height: 900px;
+    margin: 25px auto;
+    border: 2px solid var(--primary-color);
+}
+.fila .contform {
+    width: 50%;
+    background: var(--primary-color);
+    text-align: center;
+    padding: 30px 20px;
+    border: 2px solid #000000;
+    margin: 5px;
+}
+.contform h2 {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.contform p{
+    color: #000000;
+    text-align: center;
+}
+.fila .contAvatar {
+    width: 50%;
+    background: var(--secondaty-color);
+    text-align: center;
+    padding: 30px 20px;
+    border: 2px solid #000000;
+    margin: 5px;
+}
+.contAvatar h2 {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+button{
+    padding: 10px ;
+    margin: 20px;
+    background: rgb(231, 231, 231);
+    border: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(2, 2, 2);
+    transition: 1s;
+}
+button:hover{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border: rgb(255, 255, 255);
+    font-size: 25px;
+}
+.formGroup{
+    color: #000000;
+    padding: 10px 20px;
+    text-align: left;
+
+}
+.formGroup label{
+    display: block;
+}
+.formGroup input,
+.formGroup select,
+.formGroup textarea{
+    width: 100%;
+    padding: 5px 10px;
+}
+img{
+    width: 150px;
+}
+h3{
+    font-size: 35px;
+    color: #000000;
+    margin-top: 30px;
+    margin-bottom:  20px;
+}
+p{
+    font-size: 20px;
+    color: #000000;
+    margin-top: 30px;
+    margin-bottom:  20px; 
+}
+#contAvatar.azul {
+    background: #107DC0;
+}
+#contAvatar.rojo {
+    background: #fa3104;
+}
+#contAvatar.naranja {
+    background: #F65132;
+}
